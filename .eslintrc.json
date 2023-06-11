@@ -1,0 +1,76 @@
+{
+  "plugins": [
+    "@typescript-eslint",
+    "jsx-a11y"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "jest/no-alias-methods": "off",
+    "arrow-body-style": "off",
+    "array-bracket-spacing": "error",
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "block-spacing": "error",
+    "brace-style": "error",
+    "comma-dangle": "error",
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": "error",
+    "eol-last": "error",
+    "func-call-spacing": "error",
+    "implicit-arrow-linebreak": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-cond-assign": "error",
+    "no-constant-condition": "error",
+    "no-unreachable": "error",
+    "no-sequences": "error",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "max-len": ["error", {
+      "code": 120 ,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreComments": true
+    }],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-trailing-spaces": "error",
+    "no-constant-binary-expression": "error",
+    "no-whitespace-before-property": "error",
+    "object-curly-spacing": ["error", "always"],
+    "padded-blocks": ["error", "never"],
+    "quotes": ["error", "single"],
+    "rest-spread-spacing": "error",
+    "semi": [2, "always"],
+    "semi-style": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "template-curly-spacing": "error",
+    "jsx-a11y/no-noninteractive-tabindex": [
+      "error",
+      {
+        "tags": [],
+        "roles": ["tabpanel"],
+        "allowExpressionValues": true
+      }
+    ],
+    "react/jsx-no-target-blank": [0, {
+      "allowReferrer": true,
+      "enforceDynamicLinks": "always",
+      "warnOnSpreadAttributes": false,
+      "links": false,
+      "forms": false
+    }]
+  }
+}
