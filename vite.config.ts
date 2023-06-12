@@ -20,7 +20,7 @@ export default defineConfig({
           || info.name?.endsWith('.png')
           || info.name?.endsWith('.ico')
           ) {
-            return '[name].[ext]';
+            return 'assets/[name].[ext]';
           }
           // Generate other files with a hash in the filename
           return 'assets/[name].[hash].[ext]';
